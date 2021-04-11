@@ -4,8 +4,12 @@
 sudo /bin/hciconfig hci0 down
 sudo /bin/hciconfig hci0 up
 
+# add device MAC to hcitool whitelist
+# sudo hcitool lescan to get MAC
 sudo /usr/bin/hcitool lewlclr
 sudo /usr/bin/hcitool lewladd --random "FC:AF:FA:3A:F7:42"
+
+# Bluetooth has to be LE scanning to get dumps
 sudo /usr/bin/hcitool lescan --whitelist --duplicates --passive 1>/dev/null &
 
 packet=""
