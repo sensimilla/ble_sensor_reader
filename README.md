@@ -1,2 +1,2 @@
 # ble_sensor_reader
-Shell script to read broadcast data from a Bluetooth Low Energy sensor
+Shell script to read broadcast data from a Blue Maestro Low Energy sensor
